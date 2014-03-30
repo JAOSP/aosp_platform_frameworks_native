@@ -634,7 +634,11 @@ status_t ScreenshotClient::capture(
     if (s == NULL) return NO_INIT;
     return s->captureScreen(display, producer,
             reqWidth, reqHeight, minLayerZ, maxLayerZ,
+<<<<<<< HEAD
             SS_CPU_CONSUMER);
+=======
+            false);
+>>>>>>> Revert "remove support for glReadPixels screenshot path"
 }
 
 ScreenshotClient::ScreenshotClient()
